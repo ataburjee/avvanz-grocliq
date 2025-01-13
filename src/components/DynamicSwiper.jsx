@@ -11,7 +11,7 @@ const DynamicSwiper = () => {
   const swiperRefs = useRef([]); // Create an array of refs
 
   return (
-    <div className="bg-gray-50 py-10">
+    <div className="container m-auto bg-gray-50 py-10">
       {swiperData.map((section, index) => (
         <div
           key={index}
@@ -49,7 +49,7 @@ const DynamicSwiper = () => {
                 onMouseEnter={() => swiperRefs.current[index]?.autoplay.stop()}
                 onMouseLeave={() => swiperRefs.current[index]?.autoplay.start()}
               >
-                <div className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 text-white rounded-xl shadow-lg flex flex-col items-center justify-center h-96 w-full mx-auto hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                <div style={{backgroundColor: '#12475f'}} className="text-white rounded-xl shadow-lg flex flex-col items-center justify-center h-80 w-full mx-auto hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
                   {/* Icon */}
                   <div className="text-5xl mb-4">{item.icon}</div>
                   {/* Title */}

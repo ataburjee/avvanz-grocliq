@@ -2,7 +2,7 @@ import React from "react";
 
 const BackgroundCheck = () => {
   return (
-    <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="container m-auto bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
         {/* Left Side Content */}
         <div className="text-center lg:text-left">
